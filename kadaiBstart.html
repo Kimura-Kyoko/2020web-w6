@@ -25,14 +25,12 @@
     }
     .tyukichi {
       background: pink;
-      border-radius: 50%;
-      transform: rotate(360deg);
     }
     .syokichi {
       transform: scale(0.9);
     }
     .kyo {
-      transform: scale(0.9);
+      transform: scale(0.7);
     }
   </style>
 </head>
@@ -45,7 +43,7 @@
     const daikichi = Math.floor(Math.random() * num); 
     const tyukichi = Math.floor(Math.random() * num); 
     const syokichi = Math.floor(Math.random() * num); 
-    const kyo = Math.floor(Math.random() * num); 
+    //const kyo = Math.floor(Math.random() * num); 
     
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
