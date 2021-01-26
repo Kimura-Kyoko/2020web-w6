@@ -40,14 +40,16 @@
 
   <script>
     'use strict';
-    //ここがよくわからん
+ 
     const num = 10;
     const daikichi = Math.floor(Math.random() * num); 
-
+    const tyukichi = Math.floor(Math.random() * num); 
+    const syokichi = Math.floor(Math.random() * num); 
+    const kyo = Math.floor(Math.random() * num); 
+    
     for (let i = 0; i < num; i++) {
-      const tyukichi = document.createElement('div');
+      const div = document.createElement('div');
       div.classList.add('box');
-      //
       
       div.addEventListener('click', () => {
         if (i === daikichi) {
