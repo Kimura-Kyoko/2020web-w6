@@ -43,7 +43,7 @@
  
     const num = 10;
     const daikichi = Math.floor(Math.random() * num); 
-    const tyukichi = Math.floor(Math.random() * num); 
+    //const tyukichi = Math.floor(Math.random() * num); 
     const syokichi = Math.floor(Math.random() * num); 
     const kyo = Math.floor(Math.random() * num); 
     
@@ -55,16 +55,16 @@
         if (i === daikichi) {
           div.textContent = '大吉!';
           div.classList.add('daikichi');
-        } else if(i === tyukichi) {
-          div.textContent = '中吉!';
-          div.classList.add('tyukichi');
         } else if(i === syokichi) {
           div.textContent = '小吉';
           div.classList.add('syokichi');
        }else if(i === kyo){
           div.textContent = '凶';
           div.classList.add('kyo');
-       }
+       }else {
+          div.textContent = '中吉!';
+          div.classList.add('tyukichi');
+        } 
       });
 
       document.body.appendChild(div);
